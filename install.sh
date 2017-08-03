@@ -42,8 +42,11 @@ zsh
 #install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s `which zsh`
+echo "exec zsh" >> ~/.bashrc
 reload
 
 #generate key ssh
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ssh-add ~/.ssh/id_rsa
+
+

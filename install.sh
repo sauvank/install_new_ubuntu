@@ -49,4 +49,8 @@ reload
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ssh-add ~/.ssh/id_rsa
 
+#install google chrome
 
+sudo apt-get install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome*.deb

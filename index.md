@@ -37,10 +37,9 @@ cd .. && rm -r tmp/
 #install zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+sudo apt-get install zsh
+zsh
 #install oh my zsh
-$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s `which zsh`
-sudo shutdown -r 0
-
+reload

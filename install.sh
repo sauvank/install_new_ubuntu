@@ -35,22 +35,24 @@ cd .. && rm -r tmp/
 
 
 #install zsh
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo apt-get install zsh
-zsh
 #install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s `which zsh`
 echo "exec zsh" >> ~/.bashrc
-reload
 
 #generate key ssh
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ssh-add ~/.ssh/id_rsa
 
 #install google chrome
-
 sudo apt-get install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
+
+# install composer
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer.phar
+echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc
+. ~/.zshrc

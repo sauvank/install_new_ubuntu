@@ -2,7 +2,7 @@
 echo "Run this script in sudo"
 sudo apt-get update
 
-sudo apt-get install vlc
+#sudo apt-get install vlc
 sudo apt-get install git
 sudo apt-get install apache2
 sudo apt-get install curl
@@ -26,12 +26,12 @@ sudo npm install -g n
 sudo n stable
 
 #install jdownloader
-mkdir ./tmp
-cd ./tmp
-wget -O jdownloader.sh https://github.com/sauvank/jdownloader/blob/master/JD2Setup_x64.sh?raw=true
-sudo chmod 755 jdownloader.sh
-./jdownloader.sh
-cd .. && rm -r tmp/
+#mkdir ./tmp
+#cd ./tmp
+#wget -O jdownloader.sh https://github.com/sauvank/jdownloader/blob/master/JD2Setup_x64.sh?raw=true
+#sudo chmod 755 jdownloader.sh
+#./jdownloader.sh
+#cd .. && rm -r tmp/
 
 
 #install zsh

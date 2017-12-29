@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Run this script in sudo"
 sudo apt-get update
+sudo apt-get upgrade
 
 #sudo apt-get install vlc
 sudo apt-get install git
@@ -14,18 +15,6 @@ sudo chown $USER /etc/apache2/apache2.conf
 echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
 sudo chown root /etc/apache2/apache2.conf
 sudo /etc/init.d/apache2 restart
-
-
-# install nodejs and npm
-sudo apt-get install nodejs-legacy
-sudo apt-get install -y nodejs
-sudo apt-get install npm
-sudo npm install npm@latest -g
-sudo npm cache clean -f
-sudo npm install -g n
-sudo n stable
-
-
 
 #install jdownloader
 #mkdir ./tmp
@@ -48,9 +37,9 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ssh-add ~/.ssh/id_rsa
 
 #install google chrome
-sudo apt-get install libxss1 libappindicator1 libindicator7
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome*.deb
+#sudo apt-get install libxss1 libappindicator1 libindicator7
+#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#sudo dpkg -i google-chrome*.deb
 
 # install composer
 curl -sS https://getcomposer.org/installer | php

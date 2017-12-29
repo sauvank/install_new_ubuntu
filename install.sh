@@ -48,6 +48,6 @@ echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc
 . ~/.zshrc
 
 
-echo "alias ww="cd /var/www/html"" >> ~/.zshrc
-echo "alias site="cd /etc/apache2/sites-available/"" >> ~/.zshrc
+echo 'alias ww="cd /var/www/html"' >> ~/.zshrc
+echo 'alias site="cd /etc/apache2/sites-available/"' >> ~/.zshrc
 source ~/.zshrc

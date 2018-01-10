@@ -25,6 +25,8 @@ sudo /etc/init.d/apache2 restart
 #cd .. && rm -r tmp/
 
 
+sudo a2enmod rewrite
+
 #install zsh
 sudo apt-get install zsh
 #install oh my zsh

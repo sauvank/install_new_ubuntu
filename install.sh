@@ -4,12 +4,12 @@ sudo apt-get update
 sudo apt-get upgrade
 
 #sudo apt-get install vlc
-sudo apt-get install git
-sudo apt-get install apache2
-sudo apt-get install php-curl
-sudo apt install mysql-server
-sudo apt-get install -y php7.0 libapache2-mod-php7.0 php7.0-cli php7.0-common php7.0-mbstring php7.0-gd php7.0-intl php7.0-xml php7.0-mysql php7.0-mcrypt php7.0-zip
-sudo apt-get install phpmyadmin
+sudo apt-get install git --assume-yes
+sudo apt-get install apache2 --assume-yes
+sudo apt-get install php-curl --assume-yes
+sudo apt install mysql-server --assume-yes
+sudo apt-get install --assume-yes -y php7.0 libapache2-mod-php7.0 php7.0-cli php7.0-common php7.0-mbstring php7.0-gd php7.0-intl php7.0-xml php7.0-mysql php7.0-mcrypt php7.0-zip
+sudo apt-get install phpmyadmin --assume-yes
 
 sudo chown $USER /etc/apache2/apache2.conf
 echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
@@ -28,7 +28,7 @@ sudo /etc/init.d/apache2 restart
 sudo a2enmod rewrite
 
 #install zsh
-sudo apt-get install zsh
+sudo apt-get install zsh --assume-yes
 #install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s `which zsh`
@@ -57,6 +57,6 @@ echo 'alias lets="/opt/letsencrypt/./letsencrypt-auto"'>> ~/.zshrc
 source ~/.zshrc
 
  sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt --depth=1
- apt-get install apticron
- apt-get install fail2ban
- apt-get install rkhunter
+ apt-get install apticron --assume-yes
+ apt-get install fail2ban --assume-yes
+ apt-get install rkhunter --assume-yes

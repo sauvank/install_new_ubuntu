@@ -27,12 +27,22 @@ sudo /etc/init.d/apache2 restart
 
 sudo a2enmod rewrite
 
-#install zsh
-sudo apt-get install zsh --assume-yes
-#install oh my zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s `which zsh`
-echo "exec zsh" >> ~/.bashrc
+
+
+
+echo 'alias ww="cd /var/www/html"' >> ~/.zshrc
+echo 'alias site="cd /etc/apache2/sites-available/"' >> ~/.zshrc
+echo 'alias log="cd /var/log/apache2"' >> ~/.zshrc
+echo 'alias lets="/opt/letsencrypt/./letsencrypt-auto"'>> ~/.zshrc
+source ~/.zshrc
+
+ sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt --depth=1
+ apt-get install apticron --assume-yes
+ apt-get install fail2ban --assume-yes
+ apt-get install rkhunter --assume-yes
+
+
+
 
 #generate key ssh
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -47,16 +57,11 @@ ssh-add ~/.ssh/id_rsa
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer.phar
 echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc
+
+#install zsh
+sudo apt-get install zsh --assume-yes
+#install oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s `which zsh`
+echo "exec zsh" >> ~/.bashrc
 . ~/.zshrc
-
-
-echo 'alias ww="cd /var/www/html"' >> ~/.zshrc
-echo 'alias site="cd /etc/apache2/sites-available/"' >> ~/.zshrc
-echo 'alias log="cd /var/log/apache2"' >> ~/.zshrc
-echo 'alias lets="/opt/letsencrypt/./letsencrypt-auto"'>> ~/.zshrc
-source ~/.zshrc
-
- sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt --depth=1
- apt-get install apticron --assume-yes
- apt-get install fail2ban --assume-yes
- apt-get install rkhunter --assume-yes

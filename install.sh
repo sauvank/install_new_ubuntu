@@ -30,11 +30,7 @@ sudo a2enmod rewrite
 
 
 
-echo 'alias ww="cd /var/www/html"' >> ~/.zshrc
-echo 'alias site="cd /etc/apache2/sites-available/"' >> ~/.zshrc
-echo 'alias log="cd /var/log/apache2"' >> ~/.zshrc
-echo 'alias lets="/opt/letsencrypt/./letsencrypt-auto"'>> ~/.zshrc
-source ~/.zshrc
+
 
  sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt --depth=1
  apt-get install apticron --assume-yes
@@ -63,5 +59,13 @@ sudo apt-get install zsh --assume-yes
 #install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s `which zsh`
+
+echo 'alias ww="cd /var/www/html"' >> ~/.zshrc
+echo 'alias site="cd /etc/apache2/sites-available/"' >> ~/.zshrc
+echo 'alias log="cd /var/log/apache2"' >> ~/.zshrc
+echo 'alias lets="/opt/letsencrypt/./letsencrypt-auto"'>> ~/.zshrc
+source ~/.zshrc
+
+
 echo "exec zsh" >> ~/.bashrc
 . ~/.zshrc

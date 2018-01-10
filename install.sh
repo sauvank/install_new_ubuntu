@@ -53,5 +53,7 @@ echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc
 echo 'alias ww="cd /var/www/html"' >> ~/.zshrc
 echo 'alias site="cd /etc/apache2/sites-available/"' >> ~/.zshrc
 echo 'alias log="cd /var/log/apache2"' >> ~/.zshrc
-
+echo 'alias lets="/opt/letsencrypt/./letsencrypt-auto"'>> ~/.zshrc
 source ~/.zshrc
+
+ sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt --depth=1

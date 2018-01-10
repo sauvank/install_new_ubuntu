@@ -57,3 +57,6 @@ echo 'alias lets="/opt/letsencrypt/./letsencrypt-auto"'>> ~/.zshrc
 source ~/.zshrc
 
  sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt --depth=1
+ apt-get install apticron
+ apt-get install fail2ban
+ apt-get install rkhunter

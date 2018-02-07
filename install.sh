@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# wget https://raw.githubusercontent.com/sauvank/install_new_ubuntu/master/install.sh
+
 echo "Run this script in sudo"
 sudo apt-get update
 sudo apt-get upgrade

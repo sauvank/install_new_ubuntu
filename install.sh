@@ -27,7 +27,7 @@ sudo /etc/init.d/apache2 restart
 
 sudo a2enmod rewrite
 
-
+ sudo a2enmod proxy
 
 
 

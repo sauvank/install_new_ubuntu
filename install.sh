@@ -64,8 +64,9 @@ echo 'alias ww="cd /var/www/html"' >> ~/.zshrc
 echo 'alias site="cd /etc/apache2/sites-available/"' >> ~/.zshrc
 echo 'alias log="cd /var/log/apache2"' >> ~/.zshrc
 echo 'alias lets="/opt/letsencrypt/./letsencrypt-auto"'>> ~/.zshrc
-source ~/.zshrc
+
 
 
 echo "exec zsh" >> ~/.bashrc
+source ~/.zshrc
 . ~/.zshrc

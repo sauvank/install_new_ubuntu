@@ -58,7 +58,7 @@ echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc
 sudo apt-get install zsh --assume-yes
 #install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s `which zsh`
+
 
 echo 'alias ww="cd /var/www/html"' >> ~/.zshrc
 echo 'alias site="cd /etc/apache2/sites-available/"' >> ~/.zshrc
@@ -69,4 +69,5 @@ echo 'alias lets="/opt/letsencrypt/./letsencrypt-auto"'>> ~/.zshrc
 
 echo "exec zsh" >> ~/.bashrc
 source ~/.zshrc
+chsh -s `which zsh`
 . ~/.zshrc

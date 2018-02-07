@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# wget https://raw.githubusercontent.com/sauvank/install_new_ubuntu/master/install.sh
+# wget https://raw.githubusercontent.com/sauvank/install_new_ubuntu/master/install.sh && chmod +x install.sh
 
 echo "Run this script in sudo"
 sudo apt-get update

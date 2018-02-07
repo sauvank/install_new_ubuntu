@@ -8,7 +8,7 @@ sudo apt-get install git --assume-yes
 sudo apt-get install apache2 --assume-yes
 sudo apt-get install php-curl --assume-yes
 sudo apt install mysql-server --assume-yes
-sudo apt-get install --assume-yes -y php7.0 libapache2-mod-php7.0 php7.0-cli php7.0-common php7.0-mbstring php7.0-gd php7.0-intl php7.0-xml php7.0-mysql php7.0-mcrypt php7.0-zip
+sudo apt-get install --assume-yes -y php7.2 libapache2-mod-php7.2 php7.2-cli php7.2-common php7.2-mbstring php7.2-gd php7.2-intl php7.2-xml php7.2-mysql php7.2-mcrypt php7.2-zip
 sudo apt-get install phpmyadmin --assume-yes
 
 sudo chown $USER /etc/apache2/apache2.conf

@@ -5,6 +5,7 @@
 echo "Run this script in sudo"
 sudo apt-get update
 sudo apt-get upgrade
+sudo apt-get install htop
 
 #sudo apt-get install vlc
 sudo apt-get install git --assume-yes

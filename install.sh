@@ -14,7 +14,7 @@ sudo apt-get install php-curl --assume-yes
 sudo apt install mysql-server --assume-yes
 sudo apt-get install --assume-yes -y php7.2 libapache2-mod-php7.2 php7.2-cli php7.2-common php7.2-mbstring php7.2-gd php7.2-intl php7.2-xml php7.2-mysql php7.2-zip
 sudo apt-get install phpmyadmin --assume-yes
-
+sudo apt install curl
 sudo chown $USER /etc/apache2/apache2.conf
 echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
 sudo chown root /etc/apache2/apache2.conf

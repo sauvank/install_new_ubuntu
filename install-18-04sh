@@ -14,15 +14,15 @@ sudo apt install  -y php-xmlrpc php-intl php-curl php-gd php-json php-mbstring p
 
 
 echo -e "Install Apache 2" &&
-sudo apt install apache2 libapache2-mod-php7.2 && 
+sudo apt install -y  apache2 libapache2-mod-php7.2 && 
 
 
 
 
 echo -e "Install MySQL" &&
-sudo apt install libapache2-mod-php php-mysql mysql-server 
+sudo apt install -y  libapache2-mod-php php-mysql mysql-server 
 
 
 
 echo -e "Install MyphpmyadminSQL" &&
-sudo apt install phpmyadmin
+sudo apt install -y  phpmyadmin

@@ -78,3 +78,4 @@ chsh -s `which zsh`
 
 # remove mysql
 # sudo apt-get remove --purge mysql-server mysql-common phpmyadmin
+# apt-get --purge autoremove mysql-server

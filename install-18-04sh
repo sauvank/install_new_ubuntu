@@ -9,7 +9,7 @@ sudo apt install -y php7.2 &&
 
 
 echo -e "Install PHP modules" &&
-sudo apt install  php-xmlrpc php-intl php-curl php-gd php-json php-mbstring php-xml &&
+sudo apt install  -y php-xmlrpc php-intl php-curl php-gd php-json php-mbstring php-xml &&
 
 
 

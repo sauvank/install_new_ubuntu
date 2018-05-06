@@ -26,3 +26,7 @@ sudo apt install -y  libapache2-mod-php php-mysql mysql-server
 
 echo -e "Install MyphpmyadminSQL" &&
 sudo apt install -y  phpmyadmin
+echo -e "http://localhost/" &&
+echo -e "http://localhost/phpmyadmin" &&
+echo -e "login : phpmyadmin" &&
+echo -e "login : root (your passwrod set pending install )"

@@ -8,7 +8,7 @@ echo "Install Git" &&
 sudo apt-get install git -y&&
 
 echo "Install Curl" &&
-apt-get install curl -y &&
+sudo apt-get install curl -y &&
 
 echo -e "Install PHP 7.2" &&
 sudo add-apt-repository ppa:ondrej/php && 

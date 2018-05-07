@@ -46,26 +46,18 @@ sudo mv composer.phar /usr/local/bin/composer.phar &&
 echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.bashrc && 
 . ~/.bashrc &&
 
-
-echo -e "FINISH" &&
-echo -e "http://localhost/" &&
-echo -e "http://localhost/phpmyadmin" &&
-echo -e "login    : phpmyadmin" &&
-echo -e "password : root (your passwrod set pending install )" &&
-
-
-
 echo -e "Install ZSH" &&
 sudo apt -y install zsh &&
-
-echo -e "test" &&
-echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc &&
-echo -e "test" &&
 echo -e "Install Oh My Zsh" &&
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -s --batch || {
   echo "Could not install Oh My Zsh" >/dev/stderr
   exit 1
 }
-echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc
+echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc &&
 
 
+echo -e "FINISH" &&
+echo -e "http://localhost/" &&
+echo -e "http://localhost/phpmyadmin" &&
+echo -e "login    : phpmyadmin" &&
+echo -e "password : root (your passwrod set pending install )" 

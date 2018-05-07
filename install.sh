@@ -45,7 +45,6 @@ sudo mv composer.phar /usr/local/bin/composer.phar &&
 
 echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.bashrc && 
 . ~/.bashrc &&
-. ~/.zshrc &&
 
 
 echo -e "FINISH" &&

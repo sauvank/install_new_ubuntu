@@ -1,5 +1,5 @@
 #!/bin/bash
-# wget https://raw.githubusercontent.com/sauvank/install_new_ubuntu/master/install.sh && chmod +x install.sh
+# wget https://raw.githubusercontent.com/sauvank/install_new_ubuntu/master/install.sh && chmod +x install.sh && ./install.sh
 
 sudo apt-get update -y &&
 sudo apt-get  upgrade -y &&

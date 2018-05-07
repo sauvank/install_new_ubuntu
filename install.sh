@@ -58,10 +58,10 @@ echo -e "password : root (your passwrod set pending install )" &&
 echo -e "Install ZSH" &&
 sudo apt -y install zsh &&
 echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc && 
-echo "exec zsh" >> ~/.bashrc
-source ~/.zshrc
-chsh -s `which zsh`
-. ~/.zshrc
+echo "exec zsh" >> ~/.bashrc &&
+source ~/.zshrc &&
+chsh -s `which zsh` &&
+. ~/.zshrc &&
 
 echo -e "Install Oh My Zsh" &&
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"

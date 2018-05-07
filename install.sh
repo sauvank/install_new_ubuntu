@@ -49,13 +49,11 @@ echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.bashrc &&
 echo -e "Install ZSH" &&
 sudo apt -y install zsh &&
 echo -e "Install Oh My Zsh" &&
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -s --batch || {
-  echo "Could not install Oh My Zsh" >/dev/stderr
-  exit 1
-}
+
+0>/dev/null sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" &&
+
+
 echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc &&
-
-
 echo -e "FINISH" &&
 echo -e "http://localhost/" &&
 echo -e "http://localhost/phpmyadmin" &&

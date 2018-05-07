@@ -50,10 +50,10 @@ echo -e "Install ZSH" &&
 sudo apt -y install zsh &&
 echo -e "Install Oh My Zsh" &&
 
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh &&
-sed -i.tmp 's:env zsh::g' install.sh &&
-sed -i.tmp 's:chsh -s .*$::g' install.sh &&
-sh install.sh &&
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/loket/oh-my-zsh/feature/batch-mode/tools/install.sh)" -s --batch || {
+  echo "Could not install Oh My Zsh" >/dev/stderr
+  exit 1
+} &&
 
 echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc &&
 echo -e "FINISH" &&

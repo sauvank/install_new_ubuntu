@@ -62,4 +62,5 @@ echo -e "http://localhost/" &&
 echo -e "http://localhost/phpmyadmin" &&
 echo -e "login    : phpmyadmin" &&
 echo -e "password : root (your passwrod set pending install )" &&
-source ~/.bashrc 
+source ~/.zshrc &&
+exec zsh

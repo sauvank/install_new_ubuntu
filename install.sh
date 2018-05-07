@@ -56,8 +56,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/loket/oh-my-zsh/feature/ba
 } &&
 
 echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc &&
+
 echo -e "FINISH" &&
 echo -e "http://localhost/" &&
 echo -e "http://localhost/phpmyadmin" &&
 echo -e "login    : phpmyadmin" &&
-echo -e "password : root (your passwrod set pending install )" 
+echo -e "password : root (your passwrod set pending install )" &&
+source ~/.bashrc 

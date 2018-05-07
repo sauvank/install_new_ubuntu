@@ -28,6 +28,10 @@ echo -e "Active modules rewrite and proxy_http Apache 2" &&
 sudo a2enmod rewrite &&
 sudo a2enmod proxy proxy_http &&
 
+echo -e "Install Java" &&
+sudo add-apt-repository -y ppa:webupd8team/java &&
+sudo apt-get update && 
+sudo apt-get install -y oracle-java8-installer &&
 
 
 echo -e "Install MySQL" &&

@@ -56,7 +56,7 @@ echo -e "password : root (your passwrod set pending install )" &&
 
 
 echo -e "Install ZSH" &&
-apt -y install zsh &&
+sudo apt -y install zsh &&
 echo "alias composer='/usr/local/bin/composer.phar'" >> ~/.zshrc && 
 
 echo -e "Install Oh My Zsh" &&
